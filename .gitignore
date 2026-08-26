@@ -4,5 +4,6 @@
 /build/
 /buildSrc/.gradle/
 /buildSrc/build/
+/contract/openapi/build/
 /list/build/
 /utilities/build/

@@ -13,6 +13,10 @@
   "paths": {
     "/handshake": {
       "post": {
+        "operationId": "perform",
+        "tags": [
+          "handshake"
+        ],
         "requestBody": {
           "content": {
             "application/json": {

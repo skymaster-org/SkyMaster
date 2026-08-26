@@ -6,4 +6,6 @@ rootProject.name = "skymaster"
 
 include("contract:openapi")
 
+include("api:rest:server")
+
 include("app", "list", "utilities")

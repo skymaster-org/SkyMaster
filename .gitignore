@@ -1,5 +1,6 @@
 /.gradle/
 /.idea/
+/api/rest/server/build/
 /app/build/
 /build/
 /buildSrc/.gradle/

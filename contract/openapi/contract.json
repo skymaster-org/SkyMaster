@@ -1,0 +1,71 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "SkyMaster",
+    "version": "@version@"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080/api/",
+      "description": "Development environment"
+    }
+  ],
+  "paths": {
+    "/handshake": {
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "required": [
+                  "version",
+                  "identity"
+                ],
+                "properties": {
+                  "version": {
+                    "type": "string",
+                    "format": "^\\d+\\.\\d+\\.\\d+(-SNAPSHOT)?$"
+                  },
+                  "identity": {
+                    "$ref": "#/components/schemas/PlayerIdentity"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "409": {
+            "description": "Conflict"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PlayerIdentity": {
+        "type": "object",
+        "required": [
+          "username",
+          "uuid"
+        ],
+        "properties": {
+          "username": {
+            "type": "string"
+          },
+          "uuid": {
+            "type": "string",
+            "format": "uuid"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,9 @@
 /.gradle/
 /.idea/
+/app/build/
 /build/
-/build-logic/.gradle/
-/build-logic/build/
+/buildSrc/.gradle/
+/buildSrc/build/
+/contract/openapi/build/
+/list/build/
+/utilities/build/

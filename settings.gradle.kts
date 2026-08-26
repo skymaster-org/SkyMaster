@@ -1,13 +1,9 @@
-rootProject.name = "skymaster"
-
-pluginManagement {
-    includeBuild("build-logic")
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
 }
 
-include("api:rest-client")
-include("api:rest-server")
+rootProject.name = "skymaster"
+
 include("contract:openapi")
-include("server:boot")
-include("server:rest")
-include("mod:core")
-include("mod:fabric")
+
+include("app", "list", "utilities")

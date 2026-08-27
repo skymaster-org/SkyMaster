@@ -1,0 +1,21 @@
+[versions]
+
+[libraries]
+spring-boot-starter-webmvc = { group = "org.springframework.boot", name = "spring-boot-starter-webmvc" }
+spring-boot-starter-webmvc-test = { group = "org.springframework.boot", name = "spring-boot-starter-webmvc-test" }
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+
+[plugins]
+org-springframework-boot = { id = "org.springframework.boot", version = "4.1.1" }
+io-spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.7" }
+
+[bundles]
+server-implementation = [
+    "spring-boot-starter-webmvc"
+]
+server-testImplementation = [
+    "spring-boot-starter-webmvc-test"
+]
+server-testRuntimeOnly = [
+    "junit-platform-launcher"
+]

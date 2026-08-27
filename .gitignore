@@ -1,10 +1,2 @@
 /.gradle/
-/.idea/
-/api/rest/server/build/
-/app/build/
 /build/
-/buildSrc/.gradle/
-/buildSrc/build/
-/contract/openapi/build/
-/list/build/
-/utilities/build/

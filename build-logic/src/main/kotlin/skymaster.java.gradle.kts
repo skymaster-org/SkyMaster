@@ -7,3 +7,11 @@ java {
         languageVersion.set(JavaLanguageVersion.of(25))
     }
 }
+
+tasks.withType<Test> {
+    useJUnitPlatform()
+}
+
+repositories {
+    mavenCentral()
+}

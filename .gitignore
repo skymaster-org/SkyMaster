@@ -4,3 +4,4 @@
 /build-logic/.gradle/
 /build-logic/build/
 /contract/openapi/build/
+/server/build/

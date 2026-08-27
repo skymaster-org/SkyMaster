@@ -14,3 +14,5 @@ plugins {
 rootProject.name = "skymaster"
 
 include("contract:openapi")
+
+include("server")

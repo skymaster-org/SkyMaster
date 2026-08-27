@@ -4,6 +4,12 @@
     "title": "SkyMaster",
     "version": "@version@"
   },
+  "servers": [
+    {
+      "url": "http://localhost:8080",
+      "description": "Development environment"
+    }
+  ],
   "paths": {
     "/handshake": {
       "post": {
